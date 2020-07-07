@@ -41,26 +41,22 @@ function CreateArea(props) {
   return (
     <div>
       <form>
-        <input                   
-          name="hero"
-          onChange={handleChange}
-          value={note.hero}
-          placeholder="Hero"
-        />
+
+        <div className="radioButtons" onChange={handleChange}>
+          <input type="radio" value="Win" name="winLoss" /> Win
+          <input type="radio" value="Loss" name="winLoss" /> Loss
+        </div>
+        <select onChange={handleChange} name="hero">
+          {herolist.map(hero => {
+            return <option value={hero.name}>{hero.name}</option>;
+          })}
+        </select>
         <input
           name="replay"
           onChange={handleChange}
           value={note.replay}
           placeholder="Replay #"
           type="number"
-          required
-        />
-
-        <input
-          name="winLoss"
-          onChange={handleChange}
-          value={note.winLoss}
-          placeholder="Win / Loss"
           required
         />
         <textarea
