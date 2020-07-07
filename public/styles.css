@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: #af0404;
+  color: whitesmoke;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-family: "Play", sans-serif;
+  width: 75%;
+}
+
+header img {
+  height: 60px;
+  width: 107px;
+  position: fixed;
+  right: 0;
+  top: 4px;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  color: #ccc;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*STYLINGS FOR NOTES */
+.note {
+  background: #414141;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 400px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: auto;
+  display: inline;
+  color: white;
+}
+.note p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+  color: #ccc;
+}
+
+.note button {
+  background: #af0404;
+  color: white;
+}
+
+/* FORM STYLINGS FOR CREATE AREA */
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #eee;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #af0404;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.radioButtons {
+  position: static;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
